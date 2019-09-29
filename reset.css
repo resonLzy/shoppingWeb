@@ -1,0 +1,40 @@
+/* 页面初始样式清除 */
+@font-face {
+    font-family: "PingFang SC";
+    src: url('PingFang\ SC.ttf');
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+textarea,
+select,
+th,
+td{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #4E4C56;
+    font-family: 'PingFang SC',Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
