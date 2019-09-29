@@ -1,0 +1,74 @@
+
+
+body{
+    background-color: #FFFFFF;
+}
+
+/* 表单容器 */
+
+.formContent{
+    width: 30.6rem;
+    margin: 3.5rem auto;
+}
+p{
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+}
+.first{
+    margin-bottom: 2rem;
+}
+.first input{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+input{
+    border: none;
+    height: 6rem;
+    background-color: #EFEFEF;
+    display: block;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    color: #4E4C56;
+    padding-left: 1.5rem;
+}
+
+.second{
+    width: 100%;
+}
+.checkBox{
+    height: 6rem;
+    line-height: 6rem;
+    width: 100%;
+    background-color: #EFEFEF;
+    border-radius: 0.5rem;
+}
+.checkBox img{
+    height: 4rem;
+    line-height: 4rem;
+    width: 0.1rem;
+    margin-top: 1rem;
+}
+.checkBox input{
+    border-radius: 0;
+    float: left;
+    width: 22rem;
+}
+.checkBox .getCheckNum{
+    color: #E7CFB3;
+    font-size: 1.2rem;
+    float: right;
+    width: 8rem;
+    padding: 0;
+}
+
+.submitButton{
+    border: none;
+    background: url('images/Rectangle.png') no-repeat;
+    background-size: cover;
+    width: 18.5rem;
+    height: 4.5rem;
+    margin: 3rem 5.5rem;
+    font-size: 1.6rem;
+    color: #E7CFB3;
+}
