@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    window.onload = function () {
+      //获取视窗的宽度
+      let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      console.log(htmlWidth);
+      //获取视窗的高度
+      let htmlDom = document.getElementsByTagName('html')[0];
+      htmlDom.style.fontSize = htmlWidth / 10;
+    }
+  </script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/js.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="buy-header">
+      <div class="buy-header-text">肥嘟嘟左卫门邀请你加入掘金会员！</div>
+      <button>打开APP</button>
+    </div>
+    <div class="buy-content">
+      <span class="buy-content-cancel"></span>
+      <img src="img/commodity-img.png" alt="">
+      <div class="buy-content-info">全场顺丰包邮史莱姆句子哪哪哪哪哪哪哪哪发生客家话艰苦</div>
+      <div class="buy-content-price">
+        <span>￥30</span>
+        <span>36人已购买</span>
+      </div>
+    </div>
+    <div class="buy-button">
+      <input type="button" value="立即购买">
+    </div>
+    <div class="buy-referrer">
+      <div class="buy-referrer-img">
+        <img src="img/referrer.png" alt="">
+      </div>
+      <div class="buy-referrer-info">会给大家看哈发空间发哈客户</div>
+      <div class="buy-referrer-button">
+        <input type="button" value="确认">
+        <input type="button" value="取消">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

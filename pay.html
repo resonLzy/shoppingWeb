@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    window.onload = function () {
+      //获取视窗的宽度
+      let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      console.log(htmlWidth);
+      //获取视窗的高度
+      let htmlDom = document.getElementsByTagName('html')[0];
+      htmlDom.style.fontSize = htmlWidth / 10;
+    }
+  </script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/js.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="pay-header">订单详情</div>
+    <div class="pay-waitTime">
+      <div class="pay-waitTime-info">
+        <span>等待买家付款</span>
+        <span>剩23小时59分 自动关闭</span>
+      </div>
+      <img src="img/waitTime.png" alt="">
+    </div>
+    <div class="pay-address">
+      <img src="img/address.png" alt="">
+      <div class="pay-address-info">
+        <span>肥嘟嘟作为店</span>
+        <span>18888888888</span>
+        <div>浙江市 杭州市 弓和去 大关路的咖啡机感觉快乐ask就11312东11020</div>
+      </div>
+    </div>
+
+    <div class="pay-price">
+      <div class="pay-price-title">官方旗舰店 <img src="img/direction.png" alt=""></div>
+      <div class="pay-price-info">
+        <img src="img/priceImg.png" alt="">
+        <div class="pay-price-info-details">
+          <div>看到过放假啦首都卡拉斯科房间里快速反击的分厘卡机深刻的罚款了</div>
+          <span>￥44.9</span>
+        </div> 
+      </div>
+      <div class="pay-price-content">
+        <div class="pay-price-content-list">
+          <span>运费（快递）：</span>
+          <span>￥0.00</span>
+        </div>
+        <div class="pay-price-content-list">
+          <span>会员优惠：</span>
+          <span>-￥44.9</span>
+        </div>
+        <div class="pay-price-content-list">
+          <span>订单总价：</span>
+          <span>￥44.90</span>
+        </div>
+        <div class="pay-price-content-payPrice">
+          <span>实付款：</span>
+          <span>￥30.00</span>
+        </div>
+      </div>
+    </div>
+    <div class="pay-orderInfo">
+      <div class="pay-orderInfo-title">
+        <span>订单信息</span>
+        <span>
+          <img src="img/service.png" alt="">
+          <span>联系客服</span>
+        </span>
+      </div>
+      <div class="pay-orderInfo-content">
+        <div>
+          <span>订单编号 ：</span>
+          <span>22222212123135165468468465498</span>
+        </div>
+        <div>
+          <span>创建时间 ：</span>
+          <span>2019-09-18 19:30:52</span>
+        </div>
+      </div>
+    </div>
+    <div class="pay-submit">
+      <input type="button" value="取消订单">
+      <input type="button" value="确认付款">
+    </div>
+  </div>
+
+</body>
+
+</html>
