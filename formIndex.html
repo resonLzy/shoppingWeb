@@ -21,20 +21,28 @@
     <div class="formContent">
         <form action="" method="POST">
             <div class="first">
-                <p>手机号：</p>
-                <input name="phoneNum" type="text" placeholder="请输入手机号码">
+                <p>
+                    手机号：
+                    <!-- 输入错误时出现提示 -->
+                    <span class="phoneTip">手机号码不正确,请重新输入</span>
+                </p>
+                <!-- 限制输入11位数字 -->
+                <input name="phoneNum" type="text" placeholder="请输入手机号码" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')">
             </div>
             <div class="second">
                 <p>验证码：</p>
                 <div class="checkBox">
-                    <input type="text" name="checkNum" placeholder="请输入验证码">
+                    <!-- 限制输入6位数字以内验证码 -->
+                    <input type="text" name="checkNum" placeholder="请输入验证码" maxlength="6" onkeyup="this.value=this.value.replace(/\D/g,'')">
                     <img src="images/line.png">
-                    <input class="getCheckNum" type="button" value="获取验证码">
+                    <input id="getCheckCode" class="getCheckNum" type="button" value="获取验证码">
                 </div>
             </div>
             <button class="submitButton" type="submit">完成</button>
         </form>
     </div>
+
+    <script src="formJs/checkCode.js"></script>
 </body>
 
 </html>
